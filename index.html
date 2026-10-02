@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Prakash Vastralaya, Khalilabad - Designer Sarees, Wedding Lehengas, Branded Jeans, Shirts and Kids Wear since 1991.">
+
+    <title>Prakash Vastralaya | Khalilabad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #222;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        button,
+        input {
+            font-family: inherit;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           COLORS
+        ========================= */
+
+        :root {
+            --blue: #002366;
+            --light-blue: #0a327e;
+            --gold: #d4af37;
+            --dark-gold: #a98212;
+            --white: #ffffff;
+            --off-white: #f7f7f7;
+            --text: #222222;
+            --gray: #666666;
+            --border: #e7e7e7;
+            --green: #128c45;
+        }
+
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+            width: min(1200px, 92%);
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 3px solid var(--gold);
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--blue);
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--text);
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: var(--blue);
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 92vh;
+            padding: 130px 20px 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0, 35, 102, 0.82),
+                    rgba(0, 35, 102, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80")
+                center / cover no-repeat;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.3rem, 6vw, 4.5rem);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 32px;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: #f1f1f1;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 27px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            color: var(--blue);
+        }
+
+        .btn-white {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================
+           SECTION COMMON
+        ========================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-header h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--blue);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .gold-line {
+            width: 75px;
+            height: 3px;
+            background: var(--gold);
+            margin: 14px auto;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--blue);
+            font-size: 2rem;
+            margin-bottom: 18px;
+        }
+
+        .about-text p {
+            color: var(--gray);
+            margin-bottom: 18px;
+        }
+
+        .location-box {
+            margin-top: 25px;
+            padding: 18px;
+            background: var(--off-white);
+            border-left: 4px solid var(--gold);
+            color: var(--blue);
+            font-weight: 600;
+        }
+
+        .about-image {
+            border-radius: 8px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        /* =========================
+           SEARCH + FILTER
+        ========================= */
+
+        .shop-section {
+            background: var(--off-white);
+        }
+
+        .search-box {
+            max-width: 750px;
+            margin: 0 auto 25px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 17px 22px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            outline: none;
+            font-size: 0.95rem;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .search-box input:focus {
+            border-color: var(--gold);
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .category-btn {
+            border: 1px solid var(--blue);
+            background: white;
+            color: var(--blue);
+            padding: 9px 17px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--blue);
+            color: white;
+        }
+
+
+        /* =========================
+           PRODUCT GRID
+        ========================= */
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 9px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            height: 290px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .discount {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: var(--gold);
+            color: var(--blue);
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .product-info {
+            padding: 18px;
+        }
+
+        .product-category {
+            color: var(--dark-gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+        }
+
+        .product-info h3 {
+            color: var(--blue);
+            font-size: 1rem;
+            margin: 6px 0 10px;
+        }
+
+        .price-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .final-price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--blue);
+        }
+
+        .base-price {
+            font-size: 0.85rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .product-details {
+            color: var(--gray);
+            font-size: 0.78rem;
+            margin-bottom: 15px;
+        }
+
+        .product-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .product-actions a {
+            text-align: center;
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+            color: white;
+        }
+
+        .call-btn {
+            background: var(--blue);
+            color: white;
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            color: var(--gray);
+            padding: 30px;
+        }
+
+
+        /* =========================
+           STORE INFORMATION
+        ========================= */
+
+        .store-info {
+            background: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .info-card {
+            padding: 32px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+            border-top: 4px solid var(--blue);
+        }
+
+        .info-card.gold {
+            border-top-color: var(--gold);
+        }
+
+        .info-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--blue);
+            margin-bottom: 20px;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        .days {
+            font-weight: 600;
+        }
+
+        .time {
+            color: var(--gray);
+            text-align: right;
+        }
+
+        .contact-number {
+            display: block;
+            color: var(--blue);
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+
+        /* =========================
+           LOCATION
+        ========================= */
+
+        .location-section {
+            background: var(--off-white);
+        }
+
+        .location-card {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            background: white;
+            padding: 40px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        .location-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--blue);
+            margin-bottom: 12px;
+        }
+
+        .location-card p {
+            color: var(--gray);
+            margin-bottom: 22px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: var(--blue);
+            color: white;
+            padding: 60px 0 80px;
+            border-top: 4px solid var(--gold);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        footer h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin-bottom: 17px;
+        }
+
+        footer p {
+            color: #dfe4ec;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            border: 1px solid var(--gold);
+            color: white;
+            padding: 9px 14px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--blue);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--light-blue);
+            font-size: 0.8rem;
+        }
+
+
+        /* =========================
+           MOBILE STICKY BAR
+        ========================= */
+
+        .mobile-bar {
+            display: none;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1050px) {
+
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 800px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: white;
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            }
+
+            .nav-menu.show {
+                display: flex;
+            }
+
+            .nav-menu li {
+                width: 100%;
+            }
+
+            .nav-menu a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .about-grid,
+            .info-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+
+            .product-image img {
+                height: 230px;
+            }
+
+            .mobile-bar {
+                position: fixed;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2000;
+                box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.15);
+            }
+
+            .mobile-bar a {
+                padding: 13px;
+                text-align: center;
+                color: white;
+                font-weight: 700;
+                font-size: 0.85rem;
+            }
+
+            .mobile-whatsapp {
+                background: #25d366;
+            }
+
+            .mobile-call {
+                background: var(--blue);
+            }
+
+            footer {
+                padding-bottom: 90px;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .logo {
+                font-size: 1.05rem;
+            }
+
+            .hero {
+                min-height: 85vh;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .product-info {
+                padding: 12px;
+            }
+
+            .product-image img {
+                height: 210px;
+            }
+
+            .product-info h3 {
+                font-size: 0.88rem;
+            }
+
+            .final-price {
+                font-size: 1rem;
+            }
+
+            .base-price {
+                font-size: 0.72rem;
+            }
+
+            .product-actions {
+                grid-template-columns: 1fr;
+            }
+
+            .hours-list li {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .time {
+                text-align: left;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Prakash <span>Vastralaya</span>
+            </a>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <nav>
+
+                <ul class="nav-menu" id="navMenu">
+
+                    <li>
+                        <a href="#home" onclick="closeMenu()">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" onclick="closeMenu()">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#collection" onclick="closeMenu()">Collection</a>
+                    </li>
+
+                    <li>
+                        <a href="#store" onclick="closeMenu()">Store Info</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" onclick="closeMenu()">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <h1>
+                    Prakash <span>Vastralaya</span>
+                </h1>
+
+                <p>
+                    A trusted family fashion destination in Khalilabad,
+                    serving customers since 1991.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#collection" class="btn btn-gold">
+                        Explore Collection
+                    </a>
+
+                    <a href="tel:+919807322933" class="btn btn-white">
+                        Call Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about" id="about">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>About Prakash Vastralaya</h2>
+
+                    <div class="gold-line"></div>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <h3>Fashion Since 1991</h3>
+
+                        <p>
+                            Prakash Vastralaya is a trusted clothing showroom
+                            in Khalilabad, serving customers since 1991.
+                        </p>
+
+                        <p>
+                            From designer sarees and wedding lehengas to
+                            branded jeans, stylish shirts and kids' clothing,
+                            we offer a wide collection for the entire family
+                            under one roof.
+                        </p>
+
+                        <div class="location-box">
+
+                            📍 Shree Hanuman, Gadhi Gali,
+                            Gola Bazar, Khalilabad,
+                            Uttar Pradesh - 272175
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <img
+                            class="about-image"
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80"
+                            alt="Fashion showroom">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COLLECTION / SHOP
+        ========================== -->
+
+        <section class="shop-section" id="collection">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>Our Collection</h2>
+
+                    <div class="gold-line"></div>
+
+                    <p>
+                        Explore selected styles and collections available
+                        at Prakash Vastralaya.
+                    </p>
+
+                </div>
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search for Sarees, Shirts, Jeans or Brands..."
+                        oninput="searchProducts()">
+
+                </div>
+
+
+                <!-- CATEGORIES -->
+
+                <div class="categories">
+
+                    <button class="category-btn active"
+                        onclick="filterProducts('all', this)">
+                        All
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('men', this)">
+                        Men
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('women', this)">
+                        Women
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('kids', this)">
+                        Kids
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('saree', this)">
+                        Saree
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('shirts', this)">
+                        Shirts
+                    </button>
+
+                    <button class="category-btn"
+                        onclick="filterProducts('jeans', this)">
+                        Jeans
+                    </button>
+
+                </div>
+
+
+                <!-- PRODUCTS -->
+
+                <div class="product-grid" id="productGrid">
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article class="product-card"
+                        data-category="saree women"
+                        data-name="Fancy Banarasi Silk Saree">
+
+                        <div class="product-image">
+
+                            <span class="discount">
+                                15% OFF
+                            </span>
+
+                            <img
+                                src="saree-banarasi.jpg"
+                                alt="Fancy Banarasi Silk Saree">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Saree
+                            </span>
+
+                            <h3>
+                                Fancy Banarasi Silk Saree
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹2,124
+                                </span>
+
+                                <span class="base-price">
+                                    ₹2,499
+                                </span>
+
+                            </div>
+
+                            <p class="product-details">
+                                Free Size · Red, Yellow, Pink
+                            </p>
+
+                            <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Fancy%20Banarasi%20Silk%20Saree."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article class="product-card"
+                        data-category="women"
+                        data-name="Designer Wedding Lehenga">
+
+                        <div class="product-image">
+
+                            <span class="discount">
+                                10% OFF
+                            </span>
+
+                            <img
+                                src="lehenga-wedding.jpg"
+                                alt="Designer Wedding Lehenga">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Women
+                            </span>
+
+                            <h3>
+                                Designer Wedding Lehenga
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹7,650
+                                </span>
+
+                                <span class="base-price">
+                                    ₹8,500
+                                </span>
+
+                            </div>
+
+                            <p class="product-details">
+                                Free Size · Maroon, Royal Blue
+                            </p>
+
+                            <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Designer%20Wedding%20Lehenga."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 1 -->
+
+                    <article class="product-card"
+                        data-category="shirts men"
+                        data-name="Premium Cotton Casual Shirt">
+
+                        <div class="product-image">
+
+                            <span class="discount">
+                                25% OFF
+                            </span>
+
+                            <img
+                                src="shirt-cotton.jpg"
+                                alt="Premium Cotton Casual Shirt">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Shirts
+                            </span>
+
+                            <h3>
+                                Premium Cotton Casual Shirt
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹600
+                                </span>
+
+                                <span class="base-price">
+                                    ₹800
+                                </span>
+
+                            </div>
+
+                            <p class="product-details">
+                                M, L, XL, XXL · Blue, White
+                            </p>
+
+                            <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Premium%20Cotton%20Casual%20Shirt."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+
+
+                    </article>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <article class="product-card"
+                        data-category="jeans men"
+                        data-name="Branded Slim Fit Denim Jeans">
+
+                        <div class="product-image">
+
+                            <span class="discount">
+                                20% OFF
+                            </span>
+
+                            <img
+                                src="jeans-1.jpg"
+                                alt="jeans 1">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Jeans
+                            </span>
+
+                            <h3>
+                                Branded Slim Fit Denim Jeans
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹800
+                                </span>
+
+                                <span class="base-price">
+                                    ₹1000
+                                </span>
+                                
+                         
+                           <p
+                class="product-details">
+                
+                   30,32,34,36 .
+                Dark blue,Black
+                           </p>           
+
+                            </div>
+                            
+                 <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Branded%20Slim%20Fit%20Denim%20Jeans."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>   
+                     
+                </article>       
+                            
+                <!--product 3-->
+                
+                <article
+                class="product-card"
+                 data-category="mens jeans"
+                 
+                 data-name="slim fit denim jeans">
+                
+                        <div class="product-image">
+
+                            <span class="discount">
+                                25% OFF
+                            </span>
+
+                            <img
+                                src="jeans-2.jpg"
+                                alt="jeans 2">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Jeans
+                            </span>
+
+                            <h3>
+                             Slim Fit Denim Jeans
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹1200
+                        </span>
+
+                                <span class="base-price">
+                                    ₹1600
+                                </span>
+              </div>
+           
+                            <p class="product-details">
+                                30, 32, 34, 36 · light Blue
+                            </p>
+                     </div>       
+                                             <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Branded%20Slim%20Fit%20Denim%20Jeans."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+                   
+                   </article>
+                       
+                   <!--product 4-->
+                   
+                   <article
+                   class="product-card"
+                   
+                   data-category="men's jeans"
+                   
+                   data-name="branded slim fit denim jeans">
+                       
+                   
+                            
+                            <div class="product-image">
+
+    <span class="discount">
+        25% OFF
+    </span>
+
+    <img
+        src="jeans-3.jpg"
+        alt="jeans 3">
+
+</div>
+
+<div class="product-info">
+
+    <span class="product-category">
+        Jeans
+    </span>
+
+    <h3>
+        Branded Slim Fit Denim Jeans
+    </h3>
+
+    <div class="price-row">
+
+        <span class="final-price">
+            ₹1200 
+        </span>
+
+        <span class="base-price">
+            ₹900
+        </span>
+                            <p class="product-details">
+                                30, 32, 34, 36 · light Blue denim
+                            </p>
+    </div>
+
+                            <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Branded%20Slim%20Fit%20Denim%20Jeans."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <article class="product-card"
+                        data-category="kids"
+                        data-name="Kids Ethnic Kurta Pajama Set">
+
+                        <div class="product-image">
+
+                            <img
+                                src="kids-kurta.jpg"
+                                alt="Kids Ethnic Kurta Pajama Set">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                Kids
+                            </span>
+
+                            <h3>
+                                Kids Ethnic Kurta Pajama Set
+                            </h3>
+
+                            <div class="price-row">
+
+                                <span class="final-price">
+                                    ₹999
+                                </span>
+
+                            </div>
+
+                            <p class="product-details">
+                                Price details available in store.
+                            </p>
+
+                            <div class="product-actions">
+
+                                <a
+                                    class="whatsapp-btn"
+                                    href="https://wa.me/919807322933?text=Hello%20Prakash%20Vastralaya,%20I%20am%20interested%20in%20the%20Kids%20Ethnic%20Kurta%20Pajama%20Set."
+                                    target="_blank">
+                                    WhatsApp
+                                </a>
+
+                                <a
+                                    class="call-btn"
+                                    href="tel:+919807322933">
+                                    Call Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="no-results" id="noResults">
+                    No products found. Try another search.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STORE INFORMATION
+        ========================== -->                </div>
+
+
+        <section class="store-info" id="store">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>Store Information</h2>
+
+                    <div class="gold-line"></div>
+
+                </div>
+
+
+                <div class="info-grid">
+
+
+                    <!-- HOURS -->
+
+                    <div class="info-card">
+
+                        <h3>Opening Hours</h3>
+
+                        <ul class="hours-list">
+
+                            <li>
+                                <span class="days">
+                                    Monday - Thursday
+                                </span>
+
+                                <span class="time">
+                                    08:30 AM - 09:00 PM
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="days">
+                                    Friday
+                                </span>
+
+                                <span class="time">
+                                    09:00 AM - 09:00 PM
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="days">
+                                    Saturday - Sunday
+                                </span>
+
+                                <span class="time">
+                                    08:30 AM - 09:00 PM
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- CONTACT -->
+
+                    <div class="info-card gold">
+
+                        <h3>Contact Us</h3>
+
+                        <a
+                            href="tel:+919807322933"
+                            class="contact-number">
+                            +91 98073 22933
+                        </a>
+
+                        <div class="contact-actions">
+
+                            <a
+                                href="https://wa.me/919807322933"
+                                target="_blank"
+                                class="btn btn-gold">
+                                WhatsApp Us
+                            </a>
+
+                            <a
+                                href="tel:+919807322933"
+                                class="btn btn-white"
+                                style="background:var(--blue);">
+                                Call Now
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LOCATION
+        ========================== -->
+
+        <section class="location-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2>Visit Our Store</h2>
+
+                    <div class="gold-line"></div>
+
+                </div>
+
+
+                <div class="location-card">
+
+                    <h3>Prakash Vastralaya</h3>
+
+                    <p>
+                        Shree Hanuman, Gadhi Gali,
+                        Gola Bazar, Khalilabad,
+                        Uttar Pradesh - 272175
+                    </p>
+
+                    <!-- Replace the URL below with the exact
+                         Google Maps place URL -->
+
+                    <a
+                        href="https://google.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-gold">
+
+                        📍 Get Directions
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <div>
+
+                    <h3>Prakash Vastralaya</h3>
+
+                    <p>
+                        A trusted family fashion destination in
+                        Khalilabad, serving customers since 1991.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Address</h3>
+
+                    <p>
+                        Shree Hanuman, Gadhi Gali,
+                        Gola Bazar, Khalilabad,
+                        Uttar Pradesh - 272175
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>Connect With Us</h3>
+
+                    <div class="social-links">
+
+                        <!-- Add real Instagram URL here -->
+
+                        <a href="#" target="_blank">
+                            Instagram
+              </a>
+
+                        <!-- Add real Facebook URL here -->
+
+                        <a href="#" target="_blank">
+                            Facebook
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Prakash Vastralaya.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         MOBILE STICKY BAR
+    ========================== -->
+
+    <div class="mobile-bar">
+
+        <a
+            href="tel:+919807322933"
+            class="mobile-call">
+
+            📞 Call Now
+
+        </a>
+
+        <a
+            href="https://wa.me/919807322933"
+            target="_blank"
+            class="mobile-whatsapp">
+
+            💬 WhatsApp
+
+        </a>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        /* =========================
+           MOBILE MENU
+        ========================= */
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("navMenu");
+
+            menu.classList.toggle("show");
+
+        }
+
+
+        function closeMenu() {
+
+            const menu = document.getElementById("navMenu");
+
+            menu.classList.remove("show");
+
+        }
+
+
+        /* =========================
+           CATEGORY FILTER
+        ========================= */
+
+        function filterProducts(category, button) {
+
+            const products =
+                document.querySelectorAll(".product-card");
+
+            const buttons =
+                document.querySelectorAll(".category-btn");
+
+            buttons.forEach(function(btn) {
+
+                btn.classList.remove("active");
+
+            });
+
+            button.classList.add("active");
+
+            products.forEach(function(product) {
+
+                const productCategories =
+                    product.dataset.category.toLowerCase();
+
+                if (
+                    category === "all" ||
+                    productCategories.includes(category)
+                ) {
+
+                    product.style.display = "";
+
+                } else {
+
+                    product.style.display = "none";
+
+                }
+
+            });
+
+            document.getElementById("searchInput").value = "";
+
+            checkResults();
+
+        }
+
+
+        /* =========================
+           SEARCH
+        ========================= */
+
+        function searchProducts() {
+
+            const search =
+                document.getElementById("searchInput")
+                    .value
+                    .toLowerCase()
+                    .trim();
+
+            const products =
+                document.querySelectorAll(".product-card");
+
+            products.forEach(function(product) {
+
+                const name =
+                    product.dataset.name.toLowerCase();
+
+                const category =
+                    product.dataset.category.toLowerCase();
+
+                if (
+                    name.includes(search) ||
+                    category.includes(search)
+                ) {
+
+                    product.style.display = "";
+
+                } else {
+
+                    product.style.display = "none";
+
+                }
+
+            });
+
+            checkResults();
+
+        }
+
+
+        /* =========================
+           NO RESULTS MESSAGE
+        ========================= */
+
+        function checkResults() {
+
+            const products =
+                document.querySelectorAll(".product-card");
+
+            const visibleProducts =
+                Array.from(products).filter(function(product) {
+
+                    return product.style.display !== "none";
+
+                });
+
+            const noResults =
+                document.getElementById("noResults");
+
+            if (visibleProducts.length === 0) {
+
+                noResults.style.display = "block";
+
+            } else {
+
+                noResults.style.display = "none";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
